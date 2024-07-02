@@ -1,0 +1,35 @@
+.calculator {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.input-row {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    cursor: pointer;
+    /* flexible stretch */
+    flex: 1 1 0%;
+}
+
+.btn-2col {
+    padding: 10px;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    cursor: pointer;
+    /* flexible stretch */
+    flex: 2 1 0%;
+}

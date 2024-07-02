@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 4fr
+}
+
+.sidebar {
+  width: auto;
+  background-color: #2c81c7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  width: 100%;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #1b60a1;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #f4f7fa;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header .search-bar input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+header .user-info .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.projects {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.projects h2 {
+  margin-top: 0;
+}
+
+.project-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcements {
+  margin-right: 20px;
+}
+
+.announcements h2 {
+  margin-top: 0;
+}
+
+.announcement-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.trending {
+  display: grid;
+}
+
+.trending h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.trending-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.trending-card .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.main-content-right-bar {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
